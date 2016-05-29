@@ -1,0 +1,9 @@
+.creditCard
+{
+    background-image: url('../../../assets/credit-card.png');
+    height: 64px;
+    width: 64px;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.atmContainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  border-bottom: 1px solid #2DFFFF;
+}
+
+.slotCardNotInserted
+{
+    background-image: url('../../../assets/slot.png');
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+}
+
+.slotCardInserted
+{
+    background-image: url('../../../assets/slotwithcard.png');
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+}

@@ -1,0 +1,11 @@
+.errorViewContainer
+{
+    background: #223B4B;
+    border-right: 1px solid #2DFFFF;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : red;
+    font-size: 1.4rem;
+}

@@ -1,0 +1,22 @@
+.welcomeContainer
+{
+  background: #223B4B;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #2DFFFF;
+  border-right: 1px solid #2DFFFF;
+}
+
+.welcomeMsg
+{
+  font-size: 6rem;
+}
+
+.insertCartMsg
+{
+  font-size: 2rem;
+}

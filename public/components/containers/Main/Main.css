@@ -1,0 +1,26 @@
+.main
+{
+  height: 90%;
+}
+
+.slotSpace
+{
+  height: 100%;
+  background: #FCFDFF;
+}
+
+.cartSpace
+{
+  height: 100%;
+  background: #FCFDFF;
+}
+
+:global(.no-margin)
+{
+  margin: 0px !important;
+}
+
+:global(.no-padding)
+{
+  padding: 0px !important;
+}
