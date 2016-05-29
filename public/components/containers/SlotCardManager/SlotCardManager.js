@@ -1,8 +1,8 @@
 import { DragDropContext }      from 'react-dnd';
 import HTML5Backend             from 'react-dnd-html5-backend';
 import React, { Component }     from 'react';
-import Slot                     from '../Slot';
-import Card                     from '../Card';
+import Slot                     from '../../screens/Slot';
+import Card                     from '../../screens/Card';
 import { withRouter }           from 'react-router';
 import { connect, updateStore } from '../../../store';
 
@@ -32,4 +32,5 @@ class SlotCardManager extends Component
     }
 }
 
+// Decorate the component with drop context and router
 export default DragDropContext( HTML5Backend )( withRouter( SlotCardManager ) );

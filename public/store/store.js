@@ -16,6 +16,11 @@ export const updateStore = newState => stateSubject.onNext( { ...stateSubject.va
 export const getStore = () => stateSubject;
 export const getLastState = () => stateSubject.value;
 
+/**
+ * Decorator functions
+ * @param  { args : Array of strings } => return function
+ * @param { target : ReactComponent } => return decoratated React Component
+ */
 export const connect = ( ...args ) => ( target ) =>
 {
   const obj = Object.create( target.prototype );
@@ -37,6 +42,8 @@ export const connect = ( ...args ) => ( target ) =>
 
   target.prototype.componentWillUnmount = function()
   {
+      // Unsubscribe on componentWillUnmount, this is nessecary
+      // otherwise we call setState on an unmounted component
       this.subscription.dispose();
 
       willUnmount ? willUnmount.call( this ) : noop();

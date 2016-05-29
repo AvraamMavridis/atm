@@ -6,9 +6,9 @@ export default class TopBar extends Component
 	render() {
     const { label, extraClass } = this.props;
 
-
 		return (
-			<span onClick={ this.props.onClick.bind( this ) } className={ `${styles.button} ${extraClass}` }>
+			<span onClick={ this.props.onClick.bind( this ) }
+						className={ `${styles.button} ${extraClass}` }>
 				{ label }
 			</span>
 		);
