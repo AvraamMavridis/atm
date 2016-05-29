@@ -1,24 +1,33 @@
-import React       from 'react';
-import * as styles from './ATMServices.css';
-import Col         from 'react-bootstrap/lib/Col';
-import Button      from '../Button';
+import React, { Component }   from 'react';
+import Col                    from 'react-bootstrap/lib/Col';
+import Button                 from '../Button';
+import Input                  from '../Input';
+import * as styles            from './Deposit.css';
 
-export default props => {
 
-    const onClick = path => props.navigate( path );
+export default class Deposit extends Component
+{
+    constructor()
+    {
+        super();
+        this.state = {};
+    }
 
-    return ( <div className={ styles.atmservicesContainer } >
-                <div className={ styles.service }>
-                  <Button onClick={ onClick.bind( this, '/withdrawal' ) } label='Withdrawal'/>
-                </div>
-                <div className={ styles.service }>
-                  <Button onClick={ onClick.bind( this, '/deposit' ) } label='Deposit'/>
-                </div>
-                <div className={ styles.service }>
-                  <Button onClick={ onClick.bind( this, '/changepin' ) } label='Change Pin'/>
-                </div>
-                <div className={ styles.service }>
-                  <Button onClick={ onClick.bind( this, '/activity' ) } label='Account Activity'/>
-                </div>
-             </div> );
-};
+    render()
+    {
+      const { props } = this;
+
+      return ( <Col md={12} className={ styles.depositContainer }>
+                <Col md={12} className={ styles.label } >Insert Money</Col>
+                <Col md={4} className={ styles.optionsContainer }>
+                    <Input onChange={ ({ target: { value : customAmount }}) => this.setState({ customAmount })}
+                           min="0"
+                           type="number"/>
+                    <Button onClick={ () => props.deposit( this.state.customAmount ) }
+                                                             label="OK"
+                                                             extraClass={ styles.button } />
+                </Col>
+               </Col> );
+    }
+
+}

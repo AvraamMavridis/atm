@@ -17,5 +17,6 @@ export const ERROR_MESSAGES = {
 };
 
 export const SUCCESS_MESSAGES = {
-    successfullWithdrawal : 'Take Your Money. Thank you.'
+    successfullWithdrawal : 'Take Your Money. Thank you.',
+    successfullInsertMoney : 'We received the money, thank you. Tschüss.'
 }

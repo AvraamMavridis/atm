@@ -1,0 +1,32 @@
+.depositContainer
+{
+  background: #223B4B;
+  color: #2DFFFF;
+  display: block;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.label
+{
+  text-align: center;
+  font-size: 2rem;
+}
+
+.optionsContainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content:space-between;
+}
+
+.button
+{
+  margin: 10px;
+}

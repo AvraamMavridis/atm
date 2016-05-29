@@ -9,7 +9,10 @@ const initialState =  {
 	loginAttempts  : 0,
   accountBalance : INITIAL_ACCOUNT_BALANCE,
 	isCardInserted : false,
-	userPassword	 : CORRECT_PASSWORD
+	userPassword	 : CORRECT_PASSWORD,
+	deposits       : [],
+	withdrawals    : [],
+	balanaceHistory : []
 };
 
 createStore( initialState );
