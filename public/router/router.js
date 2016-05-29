@@ -19,13 +19,12 @@ export default class ATMRouter extends Component
       <Router history={ appHistory }>
           <Route path='/' component={ Main } >
             <IndexRoute component={ Welcome } />
-            <Route path='/pin' component={ withRouter(Pin) }/>
             <Route path='/services' component={ withRouter(Services) } >
               <IndexRoute component={ withRouter(ATMServices) } />
               <Route path='/deposit' component={ Deposit }/>
               <Route path='/withdrawal' component={ Withdrawal }/>
               <Route path='/activity' component={ AccountActivity }/>
-              <Route path='/changepin' component={ Main }/>
+							<Route path='/pin' component={ withRouter(Pin) }/>
             </Route>
 						<Route path='/error/:errorID' component={ withRouter(ErrorView) } />
 						<Route path='/success/:successID' component={ withRouter(SuccessView) } />

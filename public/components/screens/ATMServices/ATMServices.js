@@ -16,9 +16,6 @@ export default props => {
                     <Button onClick={ onClick.bind( this, '/deposit' ) } label='Deposit'/>
                   </div>
                   <div className={ styles.service }>
-                    <Button onClick={ onClick.bind( this, '/changepin' ) } label='Change Pin'/>
-                  </div>
-                  <div className={ styles.service }>
                     <Button onClick={ onClick.bind( this, '/activity' ) } label='Account Activity'/>
                   </div>
                </Col>

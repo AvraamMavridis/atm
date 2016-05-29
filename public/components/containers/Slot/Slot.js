@@ -24,6 +24,13 @@ function collect( connect, monitor )
 
 export class Slot extends Component
 {
+
+  constructor()
+  {
+      super();
+      this.state = {};
+  }
+
 	render() {
 		const { connectDropTarget, isCardInserted } = this.props;
     const slotClass = isCardInserted ? styles.slotCardInserted : styles.slotCardNotInserted;

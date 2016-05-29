@@ -5,6 +5,7 @@ import Input								    from '../Input';
 import Button								    from '../Button';
 import { CORRECT_PASSWORD }     from '../../../constants';
 import { connect, updateStore } from '../../../store';
+import AbortReturnFooter				from '../AbortReturnFooter';
 
 @connect( 'loginAttempts', 'userPassword' )
 export default class Pin extends Component

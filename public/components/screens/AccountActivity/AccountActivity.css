@@ -4,8 +4,23 @@
     color: #2DFFFF;
     border-right: 1px solid #2DFFFF;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 50px;
     font-size: 1.4rem;
+}
+
+:global(tr)
+{
+    border: 1px solid red;
+}
+
+:global(td)
+{
+    border: 1px solid #2DFFFF;
+    padding: 10px;
+    color: #2DFFFF;
+}
+
+.results
+{
+    margin: 10px;
 }
