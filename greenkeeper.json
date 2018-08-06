@@ -1,0 +1,29 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "package.json",
+        "public/components/containers/Main/package.json",
+        "public/components/containers/Services/package.json",
+        "public/components/containers/SlotCardManager/package.json",
+        "public/components/screens/ATMServices/package.json",
+        "public/components/screens/AbortReturnFooter/package.json",
+        "public/components/screens/AccountActivity/package.json",
+        "public/components/screens/Button/package.json",
+        "public/components/screens/Card/package.json",
+        "public/components/screens/Deposit/package.json",
+        "public/components/screens/ErrorView/package.json",
+        "public/components/screens/Input/package.json",
+        "public/components/screens/Loading/package.json",
+        "public/components/screens/Pin/package.json",
+        "public/components/screens/Slot/package.json",
+        "public/components/screens/SuccessView/package.json",
+        "public/components/screens/TopBar/package.json",
+        "public/components/screens/Welcome/package.json",
+        "public/components/screens/Withdrawal/package.json",
+        "public/router/package.json",
+        "public/store/package.json"
+      ]
+    }
+  }
+}
