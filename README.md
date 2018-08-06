@@ -1,4 +1,7 @@
 # ATM
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/AvraamMavridis/atm.svg)](https://greenkeeper.io/)
+
 Fake ATM
 
 ### To run
